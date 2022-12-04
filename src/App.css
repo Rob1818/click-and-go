@@ -1,0 +1,47 @@
+.background {
+  background-color: rgb(209 213 219);
+}
+
+.navBar {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.navBarButtons {
+  text-transform: uppercase;
+  color: black;
+  text-decoration-line: none;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 900;
+}
+
+.navBarButtons:hover {
+  color: rgb(67 56 202);
+}
+
+.footerBar {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.footerLinks {
+  text-transform: uppercase;
+}
