@@ -45,8 +45,7 @@
   display: flex;
   justify-content: space-between;
   border-color: rgb(229 231 235);
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 1rem;
 }
 
 .menuSection2 {
