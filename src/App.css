@@ -66,7 +66,7 @@ main {
 }
 
 tbody {
-  background-color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 td {
@@ -74,6 +74,11 @@ td {
   padding-left: 0.5rem;
   padding-top: 0.5rem;
   padding-top: 0.5rem;
+}
+
+tr {
+  border: 1px solid rgb(205, 205, 205);
+  background-color: white;
 }
 
 .inStock {
@@ -132,6 +137,7 @@ p {
   padding-right: 1rem;
   padding-left: 1rem;
   color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .orderDetails:hover {
@@ -151,6 +157,7 @@ p {
   padding-right: 1rem;
   padding-left: 1rem;
   color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .addToOrder:hover {
@@ -169,4 +176,5 @@ p {
   padding-right: 1rem;
   padding-left: 1rem;
   color: rgb(186, 61, 61);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
