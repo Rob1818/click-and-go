@@ -28,7 +28,7 @@ const footerNavigation = {
 export default function Footer() {
   return (
     <div>
-      <footer className="bg-white">
+      <footer className="bg-white mt-10">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>

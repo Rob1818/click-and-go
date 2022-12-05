@@ -42,6 +42,11 @@
 /* MENU CSS */
 
 .menuSection1 {
+  min-width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   display: flex;
   justify-content: space-between;
   border-color: rgb(229 231 235);
@@ -50,10 +55,6 @@
 
 .menuSection2 {
   min-width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
   vertical-align: middle;
 }
 
