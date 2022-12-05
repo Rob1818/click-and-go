@@ -1,10 +1,13 @@
 .background {
-  background-color: rgb(209 213 219);
+  background-color: rgb(211, 211, 211);
 }
 
 .navBar {
   display: flex;
-  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  width: screen;
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -31,17 +34,139 @@
   color: rgb(67 56 202);
 }
 
-.footerBar {
-  display: flex;
-  width: 100%;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .footerLinks {
   text-transform: uppercase;
+}
+
+/* MENU CSS */
+
+.menuSection1 {
+  display: flex;
+  justify-content: space-between;
+  border-color: rgb(229 231 235);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.menuSection2 {
+  min-width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  vertical-align: middle;
+}
+
+.tableSection {
+  min-width: 100%;
+  margin: righ;
+}
+
+tbody {
+  background-color: white;
+}
+
+tr {
+  border-width: 1px;
+  padding-top: 1;
+}
+
+td {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.inStock {
+  display: inline-flex;
+  border-radius: 0.5rem;
+  background-color: rgb(220 252 231);
+  color: rgb(22 101 52);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.noStock {
+  display: inline-flex;
+  border-radius: 0.5rem;
+  background-color: rgb(254 226 226);
+  color: rgb(153 27 27);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* TEXT */
+
+h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+  color: rgb(79 70 229);
+}
+
+h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+p {
+  color: black;
+}
+
+/* BUTTONS */
+
+.orderDetails {
+  margin: 1;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background-color: rgb(79 70 229);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: white;
+}
+
+.orderDetails:hover {
+  background-color: rgb(67 56 202);
+}
+
+.addToOrder {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background-color: rgb(79 70 229);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: white;
+}
+
+.addToOrder:hover {
+  background-color: rgb(67 56 202);
+}
+
+.REDorderDetails {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background-color: rgb(254 202 202);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: rgb(186, 61, 61);
 }

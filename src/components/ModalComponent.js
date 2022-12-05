@@ -6,14 +6,14 @@ export default function ModalComponent(props) {
   const [count, setCount] = useState(1);
 
   return (
-    <>
+    <div>
       {/* Open Modal */}
       <button
         type="button"
-        className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white  hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm p-2 shadow-md"
+        className="orderDetails"
         onClick={() => setOpen(true)}
       >
-        Purchase
+        Go To Order Details
       </button>
       {/* Modal */}
       <Transition.Root show={open} as={Fragment}>
@@ -29,9 +29,8 @@ export default function ModalComponent(props) {
           >
             <div className="inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
-
-          <div className="fixed inset-0 z-10 overflow-y-auto">
-            <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          <div className="fixed inset-0 z-10">
+            <div className="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -44,7 +43,7 @@ export default function ModalComponent(props) {
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all w-full lg:max-w-sm sm:p-6">
                   <div>
                     {/* Close Modal */}
-                    <div className="m-2">
+                    <div className="m-2 text-right">
                       <button
                         type="button"
                         className="inline-flex text-right px-4 py-2 text-3xl font-black text-black hover:text-red-400"
@@ -56,11 +55,11 @@ export default function ModalComponent(props) {
                     {/* Modal Body */}
                     <div className=" text-center sm:mt-5">
                       <div>
-                        <h1 className="uppercase bg-indigo-700 font-bold text-white rounded-lg">
+                        <h1 className="uppercase bg-indigo-700 font-bold text-white rounded-lg text-3xl">
                           {props.name}
                         </h1>
                       </div>
-                      <ul className="text-left my-3">
+                      <ul className="text-center my-3">
                         <li>
                           Item Price:{" "}
                           <span className="font-bold">€{props.price}</span>
@@ -110,7 +109,7 @@ export default function ModalComponent(props) {
                   <div>
                     <button
                       type="button"
-                      className=" w-full bg-indigo-600 text-white font-bold py-2 px-4 rounded active:outline-none hover:bg-indigo-700 m-1 "
+                      className="addToOrder"
                       onClick={() => setOpen(false)}
                     >
                       Add to Order
@@ -122,6 +121,6 @@ export default function ModalComponent(props) {
           </div>
         </Dialog>
       </Transition.Root>
-    </>
+    </div>
   );
 }
