@@ -276,19 +276,13 @@ export default function App() {
               <div>
                 <table className="tableSection">
                   <thead>
-                    <div>
-                      <h2>DRINKS MENU</h2>
-                    </div>
+                    <h3>DRINKS MENU</h3>
                   </thead>
                   <tbody>
                     {/* Render list of menu items */}
                     {drink.map((drinks, Name) => (
                       <tr key={Name}>
-                        <td>
-                          <div>
-                            <h3>{drinks.Name}</h3>
-                          </div>
-                        </td>
+                        <td>{drinks.Name}</td>
                         <td>
                           {/* Conditional check for stock */}
                           {drinks.SoldOut === false ? (
@@ -297,11 +291,7 @@ export default function App() {
                             <span className="noStock">No Stock</span>
                           )}
                         </td>
-                        <td>
-                          <div>
-                            <p>€{drinks.Price}</p>
-                          </div>
-                        </td>
+                        <td>€{drinks.Price}</td>
                         <td>
                           {/* Conditional check for clickable button */}
                           {drinks.SoldOut === false ? (

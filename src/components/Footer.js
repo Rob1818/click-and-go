@@ -115,7 +115,7 @@ export default function Footer() {
           <div className="border-t border-gray-100 py-10 sm:flex sm:items-center sm:justify-between">
             <div className="flex items-center justify-center text-sm text-gray-500">
               <a href="http://" target="_blank">
-                <p class="mb-8 text-center text-base text-gray-400">
+                <p className="mb-8 text-center text-base text-gray-400">
                   Made by Robert Kriby 'Rob1818' Click here for github repo.
                 </p>
               </a>
