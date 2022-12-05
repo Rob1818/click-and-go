@@ -114,18 +114,14 @@ export default function App() {
               <div>
                 <table className="tableSection">
                   <thead>
-                    <div>
-                      <h2>BURGER MENU</h2>
-                    </div>
+                    <h2>BURGER MENU</h2>
                   </thead>
                   <tbody>
                     {/* Render list of menu items */}
                     {burger.map((burgers, Name) => (
                       <tr key={Name}>
                         <td>
-                          <div>
-                            <h3>{burgers.Name}</h3>
-                          </div>
+                          <h3>{burgers.Name}</h3>
                         </td>
                         <td>
                           {/* Conditional check for stock */}
@@ -136,9 +132,7 @@ export default function App() {
                           )}
                         </td>
                         <td>
-                          <div>
-                            <p>€{burgers.Price}</p>
-                          </div>
+                          <p>€{burgers.Price}</p>
                         </td>
                         <td>
                           {/* Conditional check for clickable button */}
@@ -168,18 +162,14 @@ export default function App() {
               <div>
                 <table className="tableSection">
                   <thead>
-                    <div>
-                      <h2>KEBAB MENU</h2>
-                    </div>
+                    <h2>KEBAB MENU</h2>
                   </thead>
                   <tbody>
                     {/* Render list of menu items */}
                     {kebab.map((kebabs, Name) => (
                       <tr key={Name}>
                         <td>
-                          <div>
-                            <h3>{kebabs.Name}</h3>
-                          </div>
+                          <h3>{kebabs.Name}</h3>
                         </td>
                         <td>
                           {/* Conditional check for stock */}
@@ -190,9 +180,7 @@ export default function App() {
                           )}
                         </td>
                         <td>
-                          <div>
-                            <p>€{kebabs.Price}</p>
-                          </div>
+                          <p>€{kebabs.Price}</p>
                         </td>
                         <td>
                           {/* Conditional check for clickable button */}
@@ -222,18 +210,14 @@ export default function App() {
               <div>
                 <table className="tableSection">
                   <thead>
-                    <div>
-                      <h2>SIDES MENU</h2>
-                    </div>
+                    <h2>SIDES MENU</h2>
                   </thead>
                   <tbody>
                     {/* Render list of menu items */}
                     {side.map((sides, Name) => (
                       <tr key={Name}>
                         <td>
-                          <div>
-                            <h3>{sides.Name}</h3>
-                          </div>
+                          <h3>{sides.Name}</h3>
                         </td>
                         <td>
                           {/* Conditional check for stock */}
@@ -244,9 +228,7 @@ export default function App() {
                           )}
                         </td>
                         <td>
-                          <div>
-                            <p>€{sides.Price}</p>
-                          </div>
+                          <p>€{sides.Price}</p>
                         </td>
                         <td>
                           {/* Conditional check for clickable button */}
@@ -276,13 +258,15 @@ export default function App() {
               <div>
                 <table className="tableSection">
                   <thead>
-                    <h3>DRINKS MENU</h3>
+                    <h2>DRINKS MENU</h2>
                   </thead>
                   <tbody>
                     {/* Render list of menu items */}
                     {drink.map((drinks, Name) => (
                       <tr key={Name}>
-                        <td>{drinks.Name}</td>
+                        <td>
+                          <h3>{drinks.Name}</h3>
+                        </td>
                         <td>
                           {/* Conditional check for stock */}
                           {drinks.SoldOut === false ? (
