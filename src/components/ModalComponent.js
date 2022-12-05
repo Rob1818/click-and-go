@@ -3,7 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 
 export default function ModalComponent(props) {
   const [open, setOpen] = useState(false);
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
   return (
     <div>
@@ -87,7 +87,7 @@ export default function ModalComponent(props) {
                           Add Items +
                         </button>
 
-                        {count > 1 ? (
+                        {count > 0 ? (
                           <button
                             className="bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded active:outline-none hover:bg-gray-500 transition-bg transition-500 transition-linear m-1"
                             onClick={() => {
