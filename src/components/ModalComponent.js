@@ -76,7 +76,7 @@ export default function ModalComponent(props) {
                           </span>
                         </li>
                       </ul>
-
+                      {/* Increment counter */}
                       <div className="flex flex-col mx-auto px-2 m-1">
                         <button
                           className="bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded active:outline-none hover:bg-gray-500 transition-bg transition-500 transition-linear m-1"
@@ -86,7 +86,7 @@ export default function ModalComponent(props) {
                         >
                           Add Items +
                         </button>
-
+                        {/* Decrecment counter - condition must be greater than zero, this stops the negative count and also renders diffrent buttons depending on the state */}
                         {count > 0 ? (
                           <button
                             className="bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded active:outline-none hover:bg-gray-500 transition-bg transition-500 transition-linear m-1"
@@ -104,9 +104,9 @@ export default function ModalComponent(props) {
                       </div>
                     </div>
                   </div>
-                  {/* Purchase Button */}
-                  {/* Purchase button sends alert */}
+
                   <div>
+                    {/* Add to order button also closes the modal */}
                     <button
                       type="button"
                       className="addToOrder"
