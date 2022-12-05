@@ -271,7 +271,7 @@ export default function App() {
             </div>
           </div>
           {/* DRINKS SECTION -------------------------------------------------------------- */}
-          <div id="sides-section" className="menuSection1">
+          <div id="drinks-section" className="menuSection1">
             <div className="menuSection2">
               <div>
                 <table className="tableSection">
