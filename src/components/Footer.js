@@ -116,7 +116,7 @@ export default function Footer() {
             <div className="flex items-center justify-center text-sm text-gray-500">
               <a href="https://github.com/Rob1818/click-and-go" target="_blank">
                 <p className="mb-8 text-center text-base text-indigo-600 hover:text-indigo-800">
-                  Made by Robert Kriby 'Rob1818' Click here to view GitHub repo.
+                  Made by Robert Kriby
                 </p>
               </a>
             </div>
