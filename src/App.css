@@ -1,5 +1,6 @@
 .background {
   background-color: rgb(211, 211, 211);
+  width: 100%;
 }
 
 .navBar {
@@ -59,21 +60,17 @@
 
 .tableSection {
   min-width: 100%;
-  margin: righ;
 }
 
 tbody {
   background-color: white;
 }
 
-tr {
-  border-width: 1px;
-  padding-top: 1;
-}
-
 td {
   padding-right: 1rem;
   padding-left: 1rem;
+  padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .inStock {
@@ -107,7 +104,7 @@ h2 {
 h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: 700;
   color: rgb(0, 0, 0);

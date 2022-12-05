@@ -259,7 +259,7 @@ export default function App() {
                           ) : (
                             // Red Button
                             <button type="button" className="REDorderDetails">
-                              Go To Order Details
+                              Order Details
                             </button>
                           )}
                         </td>

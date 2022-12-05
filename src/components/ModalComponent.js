@@ -13,7 +13,7 @@ export default function ModalComponent(props) {
         className="orderDetails"
         onClick={() => setOpen(true)}
       >
-        Go To Order Details
+        Order Details
       </button>
       {/* Modal */}
       <Transition.Root show={open} as={Fragment}>
